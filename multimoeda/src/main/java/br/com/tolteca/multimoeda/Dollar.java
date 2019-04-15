@@ -1,7 +1,7 @@
 package br.com.tolteca.multimoeda;
 
 public class Dollar {
-	int amount;
+	private int amount;
 	
 	Dollar(int amount){
 		this.amount=amount;
@@ -9,7 +9,7 @@ public class Dollar {
 	Dollar times(int multiplier) {
 		return new Dollar(amount * multiplier);
 	}
-	public boolean equal(Object object) {
+	public boolean equals(Object object) {
 		Dollar dollar = (Dollar) object;
 		return amount == dollar.amount;
 	}
